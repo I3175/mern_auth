@@ -15,7 +15,7 @@ app.use(express.json());
 connectDb();
 
 //middleware router
-app.use('/users', userRoute);
+app.use('/auth/admin', userRoute);
 
 //api/auth.register ==> post
 app.use('/api/auth', authRoute);
